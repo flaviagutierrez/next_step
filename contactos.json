@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mama",
+        "telefono": "75599103",
+        "organizacion": "familia"
+    },
+    {
+        "id": 2,
+        "nombre": "Yo",
+        "telefono": "77837829",
+        "organizacion": "familia"
+    },
+    {
+        "id": 3,
+        "nombre": "Jefe",
+        "telefono": "77837829",
+        "organizacion": "trabajo"
+    }
+]
