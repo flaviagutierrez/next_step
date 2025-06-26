@@ -16,5 +16,11 @@
         "nombre": "Jefe",
         "telefono": "77837829",
         "organizacion": "trabajo"
+    },
+    {
+        "id": 4,
+        "nombre": "Wilson",
+        "telefono": "75963215",
+        "organizacion": "otro"
     }
 ]

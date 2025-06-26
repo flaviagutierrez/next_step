@@ -2,11 +2,11 @@ import random
 
 TAMANO_TABLERO = 4
 NUM_BARCOS = 2
-INTENTOS = 6
+INTENTOS = 7
 
 # tablero vacío 
 def crear_tablero():
-    return [["O"] * TAMANO_TABLERO for _ in range(TAMANO_TABLERO)]
+    return [["💦"] * TAMANO_TABLERO for _ in range(TAMANO_TABLERO)]
 
 # imprimir tablero 
 def imprimir_tablero(tablero):
@@ -32,7 +32,7 @@ def jugar_batalla_naval():
     intentos = INTENTOS
     aciertos = 0
 
-    print("🛳️ ¡Bienvenido a Batalla Naval 4x4!")
+    print("🛳️ ¡Bienvenido a Batalla Naval!")
     print(f"Tienes {intentos} intentos para encontrar {NUM_BARCOS} barcos.\n")
 
     while intentos > 0 and aciertos < NUM_BARCOS:
@@ -54,12 +54,12 @@ def jugar_batalla_naval():
 
         if (fila, col) in barcos:
             print("🎯 ¡Tocado!")
-            tablero[fila][col] = "✔"
+            tablero[fila][col] = "🚢"
             barcos.remove((fila, col))
             aciertos += 1
         else:
             print("💦 Agua.")
-            tablero[fila][col] = "X"
+            tablero[fila][col] = "❌"
             intentos -= 1
 
         print(f"Intentos restantes: {intentos} | Barcos restantes: {NUM_BARCOS - aciertos}\n")

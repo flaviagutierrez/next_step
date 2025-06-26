@@ -14,7 +14,7 @@ proximo_id_contacto = 1
 
 
 # -------------------
-# 📂 Funciones de archivo
+# Funciones de archivo
 # -------------------
 def cargar_contactos():
     global lista_de_contactos, proximo_id_contacto
@@ -31,7 +31,7 @@ def guardar_contactos():
 
 
 # -------------------
-# ➕ Agregar
+# Agregar
 # -------------------
 def agregar_contacto(nombre, telefono, organizacion):
     global proximo_id_contacto
@@ -48,7 +48,7 @@ def agregar_contacto(nombre, telefono, organizacion):
 
 
 # -------------------
-# 🔎 Mostrar
+# Mostrar
 # -------------------
 def mostrar_contactos(filtro_org=None):
     print("\n📒 LISTA DE CONTACTOS")
@@ -74,7 +74,7 @@ def mostrar_contactos(filtro_org=None):
 
 
 # -------------------
-# ✏️ Editar
+# Editar
 # -------------------
 def buscar_contacto_por_id(id_buscado):
     for c in lista_de_contactos:
@@ -102,7 +102,7 @@ def editar_contacto(id_contacto):
 
 
 # -------------------
-# 🗑️ Eliminar
+# Eliminar
 # -------------------
 def eliminar_contacto(id_contacto):
     contacto = buscar_contacto_por_id(id_contacto)
@@ -115,7 +115,7 @@ def eliminar_contacto(id_contacto):
 
 
 # -------------------
-# ▶️ Programa principal
+# Programa principal
 # -------------------
 cargar_contactos()
 
